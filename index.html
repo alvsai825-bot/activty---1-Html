@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of [Your Name] – College Student | Web Developer" />
+  <title>[Your Name] | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons (CDN – free, no API key needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+  ========================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo / Name -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        YourName
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Hamburger Toggle (CSS-only using checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home"         class="nav-link">Home</a></li>
+          <li><a href="#about"        class="nav-link">About</a></li>
+          <li><a href="#skills"       class="nav-link">Skills</a></li>
+          <li><a href="#projects"     class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact"      class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         SECTION 1 – HOME / HERO
+    ========================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+
+        <!-- Left: Text Content -->
+        <div class="hero-text">
+          <p class="hero-greeting">👋 Hello, I'm</p>
+          <h1 class="hero-name">
+            <!-- ✏️ Replace with your full name -->
+            Alvaro Sai
+          </h1>
+          <h2 class="hero-title">
+            Computer Science Student &amp;
+            <span class="accent">Aspiring Developer</span>
+          </h2>
+          <p class="hero-bio">
+            <!-- ✏️ Replace with your own short bio -->
+            Passionate about building clean, user-friendly web experiences.
+            Currently pursuing my B.Tech in CSE and exploring full-stack
+            development, Python, and AI tools.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Skills</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2nd</span>
+              <span class="stat-label">Year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Image -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring">
+            <!-- ✏️ Replace src with your actual photo: assets/profile.jpg -->
+            <img
+              src="assets/profile.jpg"
+              alt="Profile photo of Alvaro Sai"
+              class="hero-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Placeholder shown if image is missing -->
+            <div class="hero-img-placeholder" aria-hidden="true">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge badge-top">
+            <i class="fa-brands fa-html5"></i> HTML5
+          </div>
+          <div class="float-badge badge-bottom">
+            <i class="fa-brands fa-python"></i> Python
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll-down indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2 – ABOUT ME
+    ========================================================== -->
+    <section class="about section" id="about">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Get to Know Me</span>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="section-subtitle">A little bit about who I am and what I'm studying</p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Left: Image / Illustration -->
+          <div class="about-image-col">
+            <div class="about-card-visual">
+              <div class="about-icon-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <!-- Info chips -->
+              <div class="about-chips">
+                <span class="chip"><i class="fa-solid fa-map-marker-alt"></i> India</span>
+                <span class="chip"><i class="fa-solid fa-calendar-alt"></i> 2nd Year</span>
+                <span class="chip"><i class="fa-solid fa-code"></i> CSE</span>
+                <span class="chip"><i class="fa-solid fa-star"></i> Open to Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text Details -->
+          <div class="about-text-col">
+            <p class="about-intro">
+              <!-- ✏️ Update this paragraph with your own story -->
+              Hi! I'm <strong>Alvaro Sai</strong>, a second-year Computer Science Engineering student
+              with a deep passion for technology and problem-solving. I love turning ideas into reality
+              through code, design, and creativity.
+            </p>
+
+            <!-- Education Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fa-solid fa-university"></i></div>
+              <div class="info-card-body">
+                <h3 class="info-card-title">Education</h3>
+                <!-- ✏️ Replace with your college name and details -->
+                <p><strong>B.Tech – Computer Science Engineering</strong></p>
+                <p class="muted">Your College Name, City</p>
+                <p class="muted">2023 – 2027 (Expected)</p>
+              </div>
+            </div>
+
+            <!-- Career Interests Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="info-card-body">
+                <h3 class="info-card-title">Career Interests</h3>
+                <!-- ✏️ Update interests -->
+                <p>Web Development · Python Scripting · AI/ML · UI/UX Design</p>
+              </div>
+            </div>
+
+            <!-- Future Goals Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="info-card-body">
+                <h3 class="info-card-title">Future Goals</h3>
+                <!-- ✏️ Update your future goals -->
+                <p>
+                  To become a full-stack developer, contribute to open-source projects,
+                  and eventually build products that solve real-world problems.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3 – SKILLS
+    ========================================================== -->
+    <section class="skills section bg-light" id="skills">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">My <span class="accent">Skills</span></h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Skill Card: HTML -->
+          <div class="skill-card">
+            <div class="skill-icon skill-html">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Semantic markup, accessibility, SEO-friendly structure</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 85%;"></div>
+            </div>
+            <span class="skill-level">Intermediate–Advanced</span>
+          </div>
+
+          <!-- Skill Card: CSS -->
+          <div class="skill-card">
+            <div class="skill-icon skill-css">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Responsive layouts, Flexbox, Grid, animations</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 80%;"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+
+          <!-- Skill Card: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-icon skill-js">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">DOM manipulation, events, basic ES6+ features</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 65%;"></div>
+            </div>
+            <span class="skill-level">Beginner–Intermediate</span>
+          </div>
+
+          <!-- Skill Card: Python -->
+          <div class="skill-card">
+            <div class="skill-icon skill-python">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Scripting, data handling, basic automation</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 70%;"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+
+          <!-- Skill Card: C Programming -->
+          <div class="skill-card">
+            <div class="skill-icon skill-c">
+              <i class="fa-solid fa-c"></i>
+            </div>
+            <h3 class="skill-name">C Programming</h3>
+            <p class="skill-desc">Procedural programming, pointers, data structures</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 72%;"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+
+          <!-- Skill Card: AI Tools -->
+          <div class="skill-card">
+            <div class="skill-icon skill-ai">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="skill-name">AI Tools</h3>
+            <p class="skill-desc">ChatGPT, Gemini, Copilot – prompt engineering & productivity</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--bar-width: 75%;"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4 – PROJECTS
+    ========================================================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">What I've Built</span>
+          <h2 class="section-title">My <span class="accent">Projects</span></h2>
+          <p class="section-subtitle">A few things I've created while learning and exploring</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <!-- ✏️ Replace src with assets/project1.jpg -->
+            <div class="project-img-wrap">
+              <img
+                src="assets/project1.jpg"
+                alt="Screenshot of Project One"
+                class="project-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="project-overlay">
+                <!-- ✏️ Replace # with your live project URL -->
+                <a href="#" class="btn btn-sm btn-white" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <!-- ✏️ Replace with your project name -->
+                Personal Portfolio Website
+              </h3>
+              <p class="project-desc">
+                <!-- ✏️ Replace with your project description -->
+                A clean, responsive portfolio website built to showcase skills,
+                projects, and achievements using pure HTML and CSS.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <!-- ✏️ Replace # with GitHub repo link -->
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> View Project
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img
+                src="assets/project2.jpg"
+                alt="Screenshot of Project Two"
+                class="project-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm btn-white" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <!-- ✏️ Replace with your project name -->
+                Student Grade Calculator
+              </h3>
+              <p class="project-desc">
+                <!-- ✏️ Replace with your project description -->
+                A simple Python-based tool that calculates GPA, percentage,
+                and grade from student marks input via the terminal.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">CLI</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> View Project
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img
+                src="assets/project3.jpg"
+                alt="Screenshot of Project Three"
+                class="project-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm btn-white" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <!-- ✏️ Replace with your project name -->
+                To-Do List App
+              </h3>
+              <p class="project-desc">
+                <!-- ✏️ Replace with your project description -->
+                A minimal task manager built with HTML and CSS featuring
+                add, complete, and delete functionality for daily planning.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-external-link-alt"></i> View Project
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5 – ACHIEVEMENTS
+    ========================================================== -->
+    <section class="achievements section bg-light" id="achievements">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Achievements &amp; <span class="accent">Milestones</span></h2>
+          <p class="section-subtitle">Academic, technical, and extracurricular highlights</p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Academic Achievements -->
+          <div class="achieve-col">
+            <h3 class="achieve-col-title">
+              <i class="fa-solid fa-trophy"></i> Academic
+            </h3>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real achievement -->
+                  Dean's List / High Distinction
+                </h4>
+                <p class="achieve-desc">
+                  Recognized for academic excellence in Semester [X] with a
+                  GPA of [X.X] / 10.
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real achievement -->
+                  Scholarship / Merit Award
+                </h4>
+                <p class="achieve-desc">
+                  Awarded a merit scholarship for outstanding performance in the
+                  first year of B.Tech.
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Certifications -->
+          <div class="achieve-col">
+            <h3 class="achieve-col-title">
+              <i class="fa-solid fa-certificate"></i> Certifications
+            </h3>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real certification -->
+                  Python for Beginners – [Platform Name]
+                </h4>
+                <p class="achieve-desc">
+                  Completed an introductory Python programming course covering
+                  fundamentals, functions, and file handling.
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real certification -->
+                  Responsive Web Design – [Platform Name]
+                </h4>
+                <p class="achieve-desc">
+                  Earned a certificate for designing mobile-first, accessible
+                  web pages using modern CSS techniques.
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Technical Activities -->
+          <div class="achieve-col">
+            <h3 class="achieve-col-title">
+              <i class="fa-solid fa-code-branch"></i> Activities
+            </h3>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real activity -->
+                  Hackathon Participant – [Event Name]
+                </h4>
+                <p class="achieve-desc">
+                  Participated in a 24-hour hackathon and developed a prototype
+                  solution for [Problem Statement].
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+            <div class="achieve-item">
+              <div class="achieve-dot"></div>
+              <div class="achieve-content">
+                <h4 class="achieve-title">
+                  <!-- ✏️ Replace with real activity -->
+                  Open Source Contribution – [Repository]
+                </h4>
+                <p class="achieve-desc">
+                  Fixed documentation bugs and submitted pull requests to a
+                  beginner-friendly open-source project on GitHub.
+                </p>
+                <span class="achieve-date">📅 [Month, Year]</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 6 – CONTACT
+    ========================================================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+          <p class="section-subtitle">
+            Feel free to reach out for collaborations, internships, or just a chat!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+
+            <a href="mailto:alvsai825@gmail.com" class="contact-card" aria-label="Send email">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3 class="contact-card-title">Email</h3>
+                <!-- ✏️ Your email is already set -->
+                <p class="contact-card-value">alvsai825@gmail.com</p>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a href="tel:+919666096123" class="contact-card" aria-label="Call phone number">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3 class="contact-card-title">Phone</h3>
+                <!-- ✏️ Your phone is already set -->
+                <p class="contact-card-value">+91 9666096123</p>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a
+              href="https://github.com/alvsai825-bot"
+              class="contact-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <div class="contact-card-icon contact-card-icon--dark">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3 class="contact-card-title">GitHub</h3>
+                <!-- ✏️ Your GitHub is already set -->
+                <p class="contact-card-value">@alvsai825-bot</p>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/your-linkedin-username"
+              class="contact-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <div class="contact-card-icon contact-card-icon--linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3 class="contact-card-title">LinkedIn</h3>
+                <!-- ✏️ Replace with your LinkedIn username -->
+                <p class="contact-card-value">your-linkedin-username</p>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+          </div>
+
+          <!-- Contact Message Box (pure HTML/CSS – no JS/backend) -->
+          <div class="contact-message-box">
+            <div class="contact-message-inner">
+              <div class="contact-message-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              <h3 class="contact-message-title">Want to reach out?</h3>
+              <p class="contact-message-text">
+                The best way to contact me is via email or LinkedIn.
+                I usually respond within <strong>24–48 hours</strong>.
+              </p>
+              <a href="mailto:alvsai825@gmail.com" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-envelope"></i> Send Me an Email
+              </a>
+              <a
+                href="https://github.com/alvsai825-bot"
+                class="btn btn-outline btn-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i> View My GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Footer Brand -->
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>
+        YourName
+        <span class="logo-bracket">/&gt;</span>
+        <p class="footer-tagline">Building one project at a time 🚀</p>
+      </div>
+
+      <!-- Footer Links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="https://github.com/alvsai825-bot" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:alvsai825@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copy">
+        &copy; 2026 Alvaro Sai. Made with
+        <span aria-label="love">❤️</span> using HTML &amp; CSS.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
